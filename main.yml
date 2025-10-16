@@ -1,0 +1,10 @@
+name: Wake EyeOS
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake EyeOS
+        run: echo 'EyeOS awakened at $(date)'
